@@ -38,6 +38,13 @@ describe('Addition Test', () => {
         let str = 'this is a silly string pfffgslkhgsldjkhg';
         expect(arithmetic.subtract(str)).toEqual(null)
     })
+    
+    it('throws a null inside the loop', ()=> {
+        let num1 = faker.random.number();
+        let str = 'asdkjfha';
+        expect(arithmetic.subtract(num1,str)).toEqual(null)
+    })
+
     describe('Multiply test', () => {
         
         it('fails to multiply one thing', () => {
