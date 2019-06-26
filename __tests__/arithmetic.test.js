@@ -44,50 +44,50 @@ describe('Addition Test', () => {
     let str = 'asdkjfha';
     expect(arithmetic.subtract(num1, str)).toEqual(null);
   });
+});
 
-  describe('Multiply test', () => {
+describe('Multiply test', () => {
 
-    it('fails to multiply one thing', () => {
-      let num = faker.random.number();
-      expect(arithmetic.multiply(num)).toEqual(null);
-    });
-
-    it('multiplies three things correctly', () => {
-      let num1 = faker.random.number();
-      let num2 = faker.random.number();
-      let num3 = faker.random.number();
-      expect(arithmetic.multiply(num1, num2, num3)).toEqual(num1 * num2 * num3);
-    });
-
-    it('fails to multiply strings', () => {
-      let str = 'bleep bloop beep I am a string you can do math with me I swear';
-      expect(arithmetic.multiply(str)).toEqual(null);
-    });
-
-    it('fails to multiply when the second item is a string', () => {
-      let num = faker.random.number();
-      let str = 'fuuuuuuuuuu';
-      expect(arithmetic.multiply(num,str)).toEqual(null);
-    });
+  it('fails to multiply one thing', () => {
+    let num = faker.random.number();
+    expect(arithmetic.multiply(num)).toEqual(null);
   });
-  describe('Divide test', () => {
 
-    it('throws null for one value', () => {
-      let num = faker.random.number();
-      expect(arithmetic.divide(num)).toEqual(null);
-    });
-
-    it('divides two things', () => {
-      let num1 = faker.random.number();
-      let num2 = faker.random.number();
-      expect(arithmetic.divide(num1, num2)).toEqual(num1 / num2);
-    });
-
-    it('throws null for trying to divide by zeroes', () => {
-      let num1 = 0;
-      let num2 = faker.random.number();
-      expect(arithmetic.divide(num1, num2)).toEqual(null);
-    });
-
+  it('multiplies three things correctly', () => {
+    let num1 = faker.random.number();
+    let num2 = faker.random.number();
+    let num3 = faker.random.number();
+    expect(arithmetic.multiply(num1, num2, num3)).toEqual(num1 * num2 * num3);
   });
+
+  it('fails to multiply strings', () => {
+    let str = 'bleep bloop beep I am a string you can do math with me I swear';
+    expect(arithmetic.multiply(str)).toEqual(null);
+  });
+
+  it('fails to multiply when the second item is a string', () => {
+    let num = faker.random.number();
+    let str = 'fuuuuuuuuuu';
+    expect(arithmetic.multiply(num, str)).toEqual(null);
+  });
+});
+describe('Divide test', () => {
+
+  it('throws null for one value', () => {
+    let num = faker.random.number();
+    expect(arithmetic.divide(num)).toEqual(null);
+  });
+
+  it('divides two things', () => {
+    let num1 = faker.random.number();
+    let num2 = faker.random.number();
+    expect(arithmetic.divide(num1, num2)).toEqual(num1 / num2);
+  });
+
+  it('throws null for trying to divide by zeroes', () => {
+    let num1 = 0;
+    let num2 = faker.random.number();
+    expect(arithmetic.divide(num1, num2)).toEqual(null);
+  });
+
 });
