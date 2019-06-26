@@ -1,0 +1,17 @@
+{
+  "name": "01-node-ecosystem",
+  "version": "0.0.1",
+  "description": "this will be sooooo cool",
+  "main": "index.js",
+  "scripts": {
+    "lint": "lint eslint **/*.js",
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "jest": "^24.8.0"
+  }
+}
