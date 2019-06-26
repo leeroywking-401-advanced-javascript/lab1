@@ -63,6 +63,12 @@ describe('Addition Test', () => {
       let str = 'bleep bloop beep I am a string you can do math with me I swear';
       expect(arithmetic.multiply(str)).toEqual(null);
     });
+
+    it('fails to multiply when the second item is a string', () => {
+      let num = faker.random.number();
+      let str = 'fuuuuuuuuuu';
+      expect(arithmetic.multiply(num,str)).toEqual(null);
+    });
   });
   describe('Divide test', () => {
 
