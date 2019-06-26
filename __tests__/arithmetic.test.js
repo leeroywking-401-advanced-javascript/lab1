@@ -21,7 +21,8 @@ describe('Addition Test', () => {
     let str = 'merp derp I\'m a string';
     expect(arithmetic.add(str)).toEqual(null);
   });
-
+});
+describe('Subtraction test', () => {
   it('takes a single number and returns that number', () => {
     let number = faker.random.number();
     expect(arithmetic.subtract(number)).toEqual(number);
@@ -45,7 +46,6 @@ describe('Addition Test', () => {
     expect(arithmetic.subtract(num1, str)).toEqual(null);
   });
 });
-
 describe('Multiply test', () => {
 
   it('fails to multiply one thing', () => {
