@@ -35,7 +35,7 @@ describe('Addition Test', () => {
   });
 
   it('throws null if you give it strings instead of numbers', () => {
-    let str = 'this is a silly string pfffgslkhgsldjkhg';
+    let str = 'this is silly string pfffgslkhgsldjkhg';
     expect(arithmetic.subtract(str)).toEqual(null);
   });
 
