@@ -8,14 +8,23 @@ arithmetic.add = function() {
     if(!chkNm(arguments[i])){return null}
     else{sum += arguments[i]}
   }
+  return sum;
 };
 
-arithmetic.subtract = function (a,b) {
-  if(!chkNm(a) || !chkNm(b) ) { return null; }
-  return a-b;
+arithmetic.subtract = function () {
+let final = arguments[0];
+if(chkNm(final)){
+for(let i =1; i<arguments.length; i++){
+  if(!chkNm(arguments[i])){return null}
+  else{final -= arguments[i]}
+}
+}
+else{final = null}
+return final;
 };
 
 arithmetic.multiply = function (){
+  if(arguments.length < 2){return null}
   let product = 1;
   for(let i =0; i < arguments.length ; i++){
     if(!chkNm(arguments[i])){return null}
@@ -35,6 +44,7 @@ function chkNm(num){
 };
 
 function chkZ(num){
-  if(chkNm(num) && num){return false}
+  if(num === 0){return true}
   else{return false}
 };
+
