@@ -89,5 +89,16 @@ describe('Divide test', () => {
     let num2 = faker.random.number();
     expect(arithmetic.divide(num1, num2)).toEqual(null);
   });
-
 });
+
+// describe('Subroutine tests', () => {
+//   it('returns true when its given a number', () => {
+//     let num1 = faker.random.number();
+//     expect(arithmetic.chkNm(num1)).toEqual(true)
+//   })
+
+//   it('returns null when its not given a number', () => {
+//     let str = faker.random.str();
+//     expect(arithmetic.chkNm(str)).toEqual(null)
+//   })
+// })
